@@ -1,0 +1,46 @@
+/* select basically everything */
+* {
+  color: blueviolet;
+  /* font-size: 20px; */
+}
+
+.main-header {
+  color: teal;
+}
+
+.header-two {
+  color: darkorange;
+}
+
+p {
+  color: darkolivegreen;
+}
+
+.second-headers {
+  color: darkorchid;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+#link {
+  color: green;
+}
+
+/* two elements in the class but to select only one of the element use this... */
+.list-h3 h3 {
+  color: cornflowerblue;
+}
+
+.list-h3 ul {
+  color: violet;
+}
+
+.end-list {
+  color: black;
+}
+
+.list-h3 + div {
+  color: aliceblue;
+}

@@ -1,0 +1,23 @@
+/* select class by using a . */
+.header-spec {
+  color: coral;
+}
+
+/* select an id by using a # */
+#head-id {
+  color: black;
+}
+
+h1 {
+  color: cornflowerblue;
+}
+
+p {
+  color: black;
+}
+
+h1.header-spec {
+  color: deeppink;
+}
+
+/* Note that the head is given the highest priority by CSS followed by a class then the element itself */

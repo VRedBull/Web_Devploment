@@ -37,10 +37,18 @@ body {
   color: violet;
 }
 
-.end-list {
-  color: black;
+/* using the .list-h3 class to select the below h3 ... just use a + symbol */
+.list-h3 + div {
+  color: rgb(50, 168, 95);
 }
 
-.list-h3 + div {
-  color: aliceblue;
+/* to select all the child paragraph inside the div parent of class .para-h3  */
+.para-h3 > p {
+  color: goldenrod;
+  font-weight: bold;
+}
+
+/* To select a specific child from the list of children */
+.para-h3 p:nth-child(3) {
+  color: rgb(154, 187, 34);
 }

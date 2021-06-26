@@ -1,0 +1,35 @@
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  color: black;
+  font-size: 3rem;
+}
+
+#first-button {
+  margin: 20rem 0rem 5rem 20rem;
+  padding: 2rem 4rem;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  background-color: purple;
+  border-radius: 1.5rem;
+  border-top-right-radius: 3rem;
+  border: 0.2rem solid rgba(204, 78, 198, 0.685);
+}
+
+#second-button {
+  margin: 20rem;
+  padding: 2rem 4rem;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  background-color: rgb(238, 173, 98);
+  border-radius: 50%;
+  height: 15rem;
+  width: 15rem;
+  border: 0.2rem solid rgba(255, 255, 255, 0.685);
+}

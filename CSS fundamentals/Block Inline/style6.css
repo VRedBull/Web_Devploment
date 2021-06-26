@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  color: cornflowerblue;
+}
+
+/* So inline text like a paragraph and anchor tag...if we put them 
+one below each other it goes one below another...
+so we can do is use block in display... */
+
+.first {
+  display: inline-block;
+  margin: 2rem;
+  padding: 2rem;
+  height: 20rem;
+  width: 20rem;
+  color: black;
+  background-color: aqua;
+}
+
+.second {
+  display: block;
+  color: black;
+  height: 20rem;
+  width: 20rem;
+  padding: 2rem;
+  background-color: lightsalmon;
+}

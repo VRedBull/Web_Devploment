@@ -1,0 +1,44 @@
+h1 {
+  color: coral;
+}
+
+/* html {
+  font-size: 16px;
+} */
+
+/* but we can change this default font size of 
+html from 16 to 10(for easy calculation) by using... */
+html {
+  font-size: 62.5%;
+  /* now the default font size is 10px */
+  /* and everthing below will be multiplied from 10px and not 16px */
+}
+
+/* using em - which inherits the font size from it's parent*/
+
+/* by default the size of text will be 16 */
+.text-section {
+  font-size: 1.5em;
+  /* 16 * 1.5 */
+  /* the font size are multiplied by it's parent font size, which is html */
+}
+
+/* it's parent is the section with class text-section */
+
+.text-section div {
+  font-size: 1.5em;
+  /* 16 * 1.5 * 1.5 */
+}
+
+/* using rem - which do inherit like em (only inherits the root parent font size
+of HTML which is 16 */
+
+.text-section-two {
+  font-size: 1.5rem;
+  /* 16 * 1.5 */
+}
+
+.text-section-two div {
+  font-size: 1.5rem;
+  /* 16 * 1.5 */
+}

@@ -1,0 +1,21 @@
+h1 {
+  color: coral;
+}
+
+button {
+  /* padding is the inner width and height from the element */
+  padding: 50px;
+  /* while the margin is basically the outer space from the element */
+  margin: 89px;
+
+  /* to have a bit more control on the padding we can padd it using these */
+  padding-top: 80px;
+  padding-right: 50px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+
+  /* otherwise we can just do ... the below is also same as the top */
+  padding: 80px 50px 0px 10px;
+  /* but remeber the order it's from : top right bottom left */
+  background-color: aqua;
+}

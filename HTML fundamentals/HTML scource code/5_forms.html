@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <form action="">
+      <div>
+        <label for="name">Name</label><br />
+        <input type="text" id="name" name="name" value="Your Name" />
+        <!--value will give a fill predefined name-->
+        <!--name attribute is used when we want do server side programming and
+        id are use in css-->
+      </div>
+      <div>
+        <label for="email">Email</label><br />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your email"
+        /><!--placeholder is used to give the user a kind of indication what to fill in the input area-->
+      </div>
+      <div>
+        <label for="message">Message</label><br />
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+      </div>
+      <div>
+        <label for="gender">Gender</label><br />
+        <select name="gender" id="gender">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Others" selected>Others</option>
+          <!--Others is selected by default-->
+        </select>
+      </div>
+      <div>
+        <label for="age">Age</label><br />
+        <input type="number" name="age" id="age" />
+      </div>
+      <div>
+        <label for="birthday">Birthday</label><br />
+        <input type="date" name="" id="birthday" />
+      </div>
+      <div>
+        <label for="MCQs">MCQs</label><br />
+        <input type="radio" name="mcq" id="MCQs" />1 <br />
+        <input
+          type="radio"
+          name="mcq"
+          id="MCQs"
+          checked
+        />2<br /><!--2 is checked by default-->
+        <input type="radio" name="mcq" id="MCQs" />3<br />
+        <input type="radio" name="mcq" id="MCQs" />4<br />
+      </div>
+      <div>
+        <label for="mcq">More than one correct option</label><br />
+        <input type="checkbox" name="" id="" />1<br />
+        <input type="checkbox" name="" id="" />2<br />
+        <input type="checkbox" name="" id="" />3<br />
+      </div>
+      <div>
+        <!-- buttons -->
+        <input type="button" value="Submit" /><br />
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </body>
+</html>

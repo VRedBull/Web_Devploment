@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visibility, order, negative margin</title>
+    <style>
+      /* the header accessed by class will take a higher priority than, if accessed by element name
+        even if the property specified by the element name is lower down the file
+       */
+      .header {
+        color: blue;
+      }
+      h1 {
+        /* display none will remove the element from the page  */
+        /* display: none; */
+        /* visibility will just keep the element in the page but hidden from view  */
+        /* visibility: hidden; */
+        /* important keyword will override any other color specified for the element */
+        color: red !important;
+      }
+      .para {
+        /* we can negative margins but cannot do negative paddings  */
+        margin-top: -30px;
+        margin-left: -20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="header">Heading</h1>
+    <p class="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum eligendi
+      hic, perspiciatis fugiat quo aliquam.
+    </p>
+  </body>
+</html>

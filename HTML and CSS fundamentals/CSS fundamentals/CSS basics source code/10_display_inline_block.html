@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Inline and Block elements</title>
+    <style>
+      /* li is block element, to make it inline we use display: inline to make it inline */
+      li {
+        list-style: none;
+        display: inline;
+      }
+      li a {
+        padding-right: 20px;
+      }
+      /* img is a inline element, to make it block we use display: block property */
+      img {
+        display: block;
+      }
+
+      /* since the div are block element and we want to make it inline we could just use the display:inline 
+      property but width and margin property do not work on inline so we used the display: inline-block */
+      .box {
+        display: inline-block;
+        background: #f4f4f4;
+        margin: 20px;
+        width: 30%;
+        box-sizing: border-box;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Address</a></li>
+      <li><a href="#">About us</a></li>
+    </ul>
+    <br />
+    <br />
+    <img src="/HTML fundamentals/Dev ed tutorial/images/download.jpg" alt="" />
+    <img src="/HTML fundamentals/Dev ed tutorial/images/download.jpg" alt="" />
+
+    <div class="box">
+      <h3>Heading</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+        dignissimos, error expedita cumque deleniti cum ipsum dicta corrupti?
+        Nostrum, dignissimos?
+      </p>
+    </div>
+    <div class="box">
+      <h3>Heading</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+        dignissimos, error expedita cumque deleniti cum ipsum dicta corrupti?
+        Nostrum, dignissimos?
+      </p>
+    </div>
+    <div class="box">
+      <h3>Heading</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+        dignissimos, error expedita cumque deleniti cum ipsum dicta corrupti?
+        Nostrum, dignissimos?
+      </p>
+    </div>
+  </body>
+</html>

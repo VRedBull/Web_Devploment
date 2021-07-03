@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position in CSS</title>
+    <style>
+      body {
+        height: 2000px;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+      }
+      #container {
+        width: 500px;
+        height: 500px;
+        background: #eee;
+        position: relative;
+      }
+      /* Position static is default position */
+      #box-1 {
+        position: relative;
+        top: 50px;
+        left: 50px;
+        background: red;
+        z-index: 2;
+        /* z index is used to position the element in the stack the higher the value the more on top of 
+        other elements it is */
+      }
+      /* absolute position is used when we want a element to be positioned within a element(parent element)
+      which have a position as relative */
+      #box-2 {
+        position: absolute;
+        top: 50px;
+        right: 60px;
+        background: yellow;
+      }
+      #box-3 {
+        position: absolute;
+        bottom: 50px;
+        left: 100px;
+        background: purple;
+      }
+      /* position fixed will fix the element to the page, and will not move from it's position
+      even if scrolled down or up */
+      #box-4 {
+        position: fixed;
+        background: orange;
+        z-index: 2;
+      }
+      #box-5 {
+        position: sticky;
+        top: 0;
+        background: blue;
+        z-index: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box-1" class="box"></div>
+    <div id="container">
+      <div id="box-2" class="box"></div>
+      <div id="box-3" class="box"></div>
+    </div>
+    <div id="box-4" class="box"></div>
+    <div id="box-5" class="box"></div>
+  </body>
+</html>

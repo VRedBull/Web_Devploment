@@ -1,0 +1,8 @@
+learn in this order
+
+1.html and CSS
+2. Js
+3. Php (then maybe a php framework like laravel)
+4. Mysql
+5. Bootstrap
+6. React(could also learn after learning Js)

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Basics</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: row;
+        background: rgb(105, 103, 103);
+        height: 500px;
+        align-items: center;
+        /* flex-wrap: wrap;     pushes the boxes into next line */
+      }
+      .item {
+        background: grey;
+        padding: 1rem;
+        border: white solid 0.1rem;
+        margin: 0.5rem;
+        text-align: center;
+        justify-content: space-around;
+        flex: 1;
+      }
+
+      .item:first-child {
+        flex: 1;
+      }
+
+      .item-2 {
+        align-self: flex-end;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item item-1">
+        <h3>Item 1</h3>
+      </div>
+      <div class="item item-2">
+        <h3>Item 2</h3>
+      </div>
+
+      <div class="item item-3">
+        <h3>Item 3</h3>
+      </div>
+    </div>
+  </body>
+</html>

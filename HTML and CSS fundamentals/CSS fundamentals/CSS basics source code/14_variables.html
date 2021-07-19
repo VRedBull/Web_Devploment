@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Variables</title>
+    <style>
+      /* if we include items in the root then we can use it anywhere in our stylesheet */
+      :root {
+        --primary-color: #333;
+        --secondary-color: grey;
+        --text-color: white;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6em;
+      }
+      .container {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .box {
+        background: var(--primary-color);
+        color: var(--text-color);
+        border: var(--secondary-color) solid 0.2em;
+        margin: 1rem;
+        padding: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box-1">
+        <h3>Heading 1</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos,
+          architecto.
+        </p>
+      </div>
+      <div class="box box-2">
+        <h3>Heading 2</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos,
+          architecto.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

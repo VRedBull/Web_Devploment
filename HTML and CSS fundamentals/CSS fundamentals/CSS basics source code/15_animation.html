@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keyframes and animations</title>
+    <style>
+      .box {
+        width: 10rem;
+        height: 10rem;
+        background-color: #fff;
+        /* animation-name: animate1;
+        animation-duration: 3s;
+        do these above two things in just one line */
+        animation: animate1 3s forwards;
+        animation-iteration-count: 2;
+        position: relative;
+
+        /* transition: all 2s ease-in-out; */
+      }
+
+      @keyframes animate1 {
+        from {
+          top: 0;
+          background-color: green;
+          border-radius: 50% 0 0 0;
+        }
+        30% {
+          background-color: yellow;
+        }
+        to {
+          top: 200px;
+          width: 15rem;
+          background-color: red;
+          transform: rotate(25deg);
+        }
+      }
+
+      .box:hover {
+        background-color: teal;
+        border-radius: 50% 0 0 70%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

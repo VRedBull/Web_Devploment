@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Basics | Columns</title>
+    <style>
+      .container {
+        display: grid;
+        /* fr is fraction, another unit in css */
+        grid-template-columns: 1fr 2fr;
+        /*another method is to use repeat function
+        grid-template-columns: repeat(3, 1fr); */
+        grid-template-rows: 3fr 2fr 1fr;
+        /* to take care of the rest of the rows we use auto  */
+        grid-auto-rows: 1fr;
+        grid-column-gap: 1em;
+      }
+      .item {
+        background: rgb(146, 144, 144);
+        border: black solid 0.2em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item" id="item-1">
+        <h1>Item 1</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque,
+          quasi.
+        </p>
+      </div>
+      <div class="item" id="item-2">
+        <h1>Item 1</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque,
+          quasi.
+        </p>
+      </div>
+      <div class="item" id="item-2">
+        <h1>Item 1</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque,
+          quasi.
+        </p>
+      </div>
+      <div class="item" id="item-2">
+        <h1>Item 1</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque,
+          quasi.
+        </p>
+      </div>
+      <div class="item" id="item-2">
+        <h1>Item 1</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque,
+          quasi.
+        </p>
+      </div>
+      <div class="item" id="item-2">
+        <h1>Item 1</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque,
+          quasi.
+        </p>
+      </div>
+      <div class="item" id="item-2">
+        <h1>Item 1</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque,
+          quasi.
+        </p>
+      </div>
+      <div class="item" id="item-2">
+        <h1>Item 1</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque,
+          quasi.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

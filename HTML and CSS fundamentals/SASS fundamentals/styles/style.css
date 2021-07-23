@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  line-height: 2em;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: black;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header h1 {
+  margin: 2rem;
+  color: white;
+}
+
+.section {
+  margin: 3rem;
+}
+
+.section h2 {
+  font-size: 1.5em;
+}
+
+.section-a {
+  color: white;
+  padding: 2em;
+  background: #12bd5f;
+}
+
+.section-b {
+  color: white;
+  padding: 2em;
+  background: #0f0f80;
+}
+
+.btn-light, .btn-dark {
+  display: inline-block;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 1rem;
+  margin-top: 1em;
+}
+
+.btn-light a, .btn-dark a {
+  text-decoration: none;
+}
+
+.btn-light {
+  background: #333;
+}
+
+.btn-light a {
+  color: #fff;
+}
+
+.btn-light:hover {
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+  background-color: #4d4d4d;
+}
+
+.btn-dark {
+  background: #fff;
+}
+
+.btn-dark a {
+  color: #333;
+}
+
+.btn-dark:hover {
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+  background-color: #e6e6e6;
+}
+/*# sourceMappingURL=style.css.map */
